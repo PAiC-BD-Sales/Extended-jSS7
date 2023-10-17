@@ -1,26 +1,15 @@
 # Extended jSS7
 
-> The Extended jSS7 is cloned from [RestComm jSS7](https://github.com/RestComm/jss7) from which we have added a set of improvements and new features listed in a later section of this file.
-> 
+> The Open Source Extended Java SS7 stack serves as a vital bridge between applications and legacy SS7 communication network nodes, offering a wide array of enhancements and new features.
 
-
-## Introduction
-
-Open Source Extended Java SS7 stack allows applications to communicate with legacy SS7 communications network nodes. 
-
-Extended jSS7 provides implementation of SS7 stack layers `MTP2`, `MTP3`, `ISUP`, `SCCP`, `TCAP`, `CAMEL (Phase I, Phase II, Phase III and Phase IV)` and 
-`MAP`. It also has in-built support for `SIGTRAN (SCTP/M3UA)` over IP and strictly adheres to the standards and specifications defined by the International Telecommunications Union (ITU), the 3rd Generation Partnership Project (3GPP), and the Internet Engineering Task Force (IETF). The 
-platform offers a flexible API set for developers that hides underlying Telecom infrastructure and thus making it easier to implement SS7 services as well as 
-migrating their applications over Time Division Multiplexing (TDM) equipments to SS7 over IP (SIGTRAN). {this-platform}  {this-application}  is based on an easily scalable and configurable load-balancing architecture.
-
-Extended jSS7 supports TDM hardware offered by major vendors in the market, namely Intel family boards (Dialogic) and  Zaptel/Dahdi (Digium, Sangoma). For production purposes, Dialogic boards with MTP2 and MTP3 on-board are the only ones tested and therefore recommended.
-
-If you intend to use `SIGTRAN` only (recommended), you can install the Extended jSS7 on any Operating System that supports Java and _Stream Control Transmission Protocol_ (SCTP). Any flavour of Linux OS supports SCTP natively or through an easy installation of Linux Kernel SCTP libraries/dev tools.
-
-Extended jSS7 makes JAIN-SLEE TCAP, MAP, CAP and ISUP Resource Adaptors (RA) development possible, which enable developers to build SS7 applications with ease. They would only require an understanding of JAIN-SLEE Resource Adaptors and can focus on building applications quickly and efficiently rather than worrying about the underlying SS7 stack. If you wish to use JAIN-SLEE Resource Adaptors, the Command Line Interface (CLI - Shell Management tool) or the Graphic User Interface (GUI) for run-time configuration, then you must have either JBoss or WildFly Application Server installed and running. Anyway, if you do not wish to use the Resource Adaptors, then Extended jSS7 can work as a standalone library. 
-
-The Open Source Software gives you the flexibility to understand the readily available source code and customise the product for your Enterprise needs. 
-
+## Key Features
+* Streamlines communication between applications and legacy SS7 network nodes.
+* Implements critical SS7 stack layers, including MTP2, MTP3, ISUP, SCCP, TCAP, CAMEL (Phase I, Phase II, Phase III, and Phase IV), and MAP.
+* Supports SIGTRAN (SCTP/M3UA) over IP in strict compliance with ITU, 3GPP, and IETF standards.
+* Provides a developer-friendly API set, simplifying SS7 service implementation and aiding migration from TDM to SS7 over IP (SIGTRAN).
+* Compatibility with leading TDM hardware vendors, including Dialogic and Zaptel/Dahdi.
+* Facilitates JAIN-SLEE TCAP, MAP, CAP, and ISUP Resource Adaptors (RA) development for streamlined SS7 application creation.
+* Offers flexibility to customize source code to align with enterprise needs.
 
 ## Build Extended jSS7 
 
